@@ -1,0 +1,201 @@
+#titulo {
+    color: tomato;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+p.especial {
+    color: mediumspringgreen;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    /*color: black; no se aplica porque hay selectores que ya tiene la propiedad de color*/
+}
+/* esta es la convencion de colores hexadecimales
+.color {
+    color: #ff0000;
+}
+.color {
+    color: rgb(0, 255, 255);
+}  esta es la de RGB
+
+.color {
+    border: 5px black dashed;
+}  esto es un alinea punteada en el borde del texto
+
+.color {
+    border: 5px black solid;
+} esto es un alinea solida en el borde del texto
+
+.color {
+    border: 5px black dotted;
+} esto es un alinea punteada en el borde del texto
+
+.color {
+    border: 5px red outset;
+} esto es un alinea 3d en el borde del texto
+
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+none
+hidden
+
+*/
+
+.color {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+    background-color: red;
+}
+
+/* como manipular el fondo o background*/
+#fondo {
+    background-color: rgba(255,0,0);
+    /* opacity: 0.3; */
+    height: 200px;
+    /* background-image: url("Imagen 2.jpg"); */
+    background-size: 100px 100px;
+/*     background-repeat: repeat-y;
+    background-position: center bottom; */
+    background: #f00 url('Imagen\ 2.jpg') repeat-y center bottom /100px 100px;
+
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee; /*poner color a las filas de latabla even=impar odd=par*/
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;  /*poner la manito cuando se pasa el mouse por encima*/
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color:red ;
+}
+
+.inline {
+    display: inline;
+}
+
+#position { 
+    /* position: fixed; fixed se antepone a todo y se mueve con toda la pagina*/
+    position: sticky; /*  sticky mezcla entre fixed y absolute*/
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+    width: 100px;
+}
+
+.container {
+    height: 200px;
+}
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+.center {
+    padding: 50px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
